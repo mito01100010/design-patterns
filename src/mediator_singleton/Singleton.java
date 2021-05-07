@@ -1,10 +1,10 @@
 package mediator_singleton;
 
-public class Singleton extends Chat{
+public class Singleton {
 
     private static Singleton instance;
 
-    public Singleton() {
+    private Singleton() {
     }
 
     public static Singleton getInstance(){
@@ -19,7 +19,6 @@ public class Singleton extends Chat{
     public void consumeMessage(String message){
         if(message.equals("cat")){
             System.out.println("The word " + "\"" + message + "\"" + " is not allowed in this chat room.");
-            //mediator.removeUser(this);
         }
 
     }

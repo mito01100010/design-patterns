@@ -15,7 +15,7 @@ public class Main {
         maria.send("cat");
         george.send("addBot");
         maria.send("cat");
-        george.send("test");
+        ivan.send("test");
 
     }
 }

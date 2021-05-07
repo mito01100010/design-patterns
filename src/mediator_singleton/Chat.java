@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Chat implements MessageMediator{
 
-    private List<User> users;
+    public List<User> users;
 
     public Chat() {
         this.users = new ArrayList<>();
@@ -30,6 +30,6 @@ public class Chat implements MessageMediator{
     @Override
     public void removeUser(User user) {
         this.users.remove(user);
-        System.out.println("User have been removed.");
+        System.out.println("User \"" + user.name + "\" have been removed.");
     }
 }
